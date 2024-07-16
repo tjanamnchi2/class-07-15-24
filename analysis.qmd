@@ -12,3 +12,12 @@ execute:
 
 library(tidyverse)
 ```
+
+```{r}
+#| label: loading
+
+data <- read_csv("data/resume.csv")
+
+data
+```
+
