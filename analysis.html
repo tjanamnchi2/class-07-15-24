@@ -81,22 +81,16 @@ dbl (1): call
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 4,870 × 4
-   firstname sex    race   call
-   &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt;
- 1 Allison   female white     0
- 2 Kristen   female white     0
- 3 Lakisha   female black     0
- 4 Latonya   female black     0
- 5 Carrie    female white     0
- 6 Jay       male   white     0
- 7 Jill      female white     0
- 8 Kenya     female black     0
- 9 Latonya   female black     0
-10 Tyrone    male   black     0
-# ℹ 4,860 more rows</code></pre>
+<pre><code># A tibble: 4 × 3
+  race   call     n
+  &lt;chr&gt; &lt;dbl&gt; &lt;int&gt;
+1 white     0  2200
+2 black     0  2278
+3 white     1   235
+4 black     1   157</code></pre>
 </div>
 </div>
+<p>The broad topic we want to answer is: What is the relationship between race and employment? The specific question we are trying to answer is: How likely is a percieved white to get a callback for an interview versus a perceived black?</p>
 
 </main>
 <!-- /main column -->

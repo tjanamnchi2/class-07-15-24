@@ -1,5 +1,5 @@
 ---
-title: "."
+title: "Resumes"
 author: "Tanay Janmanchi"
 format: html
 execute: 
@@ -18,6 +18,15 @@ library(tidyverse)
 
 data <- read_csv("data/resume.csv")
 
-data
+
+data |>
+  summarize(n = n(), .by =c(race, call))
+
 ```
+
+
+The broad topic we want to answer is: What is the relationship between race and employment? The specific question we are trying to answer is: How likely is a percieved white to get a callback for an interview versus a perceived black?
+
+The Preceptor Table has one row for each person. There are four potential outcomes: no/yes callback for a percieved white and no/yes callback for perceived black. There is one main covariate, race, and there are some variables which must also be considered, such as sex, competitiveness of job and location. The treatment is based on race.
+
 
