@@ -1,0 +1,14 @@
+---
+title: "."
+author: "Tanay Janmanchi"
+format: html
+execute: 
+  echo: FALSE
+---
+
+```{r}
+#| label: setup
+#| message: FALSE
+
+library(tidyverse)
+```
